@@ -20,6 +20,7 @@ public class NormcoreHandSwap : MonoBehaviour
    private void OnTriggerEnter(Collider other) {
     if(other.CompareTag("hand")){
         other.GetComponent<MeshRenderer>().enabled = false; 
+
         foreach (Transform child in other.transform)
         {
             if(child.gameObject.name == objectName){
