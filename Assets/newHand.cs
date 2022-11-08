@@ -8,7 +8,7 @@ using UnityEngine;
 public class newHand : MonoBehaviour
 {
 
-    private Rigidbody rb; 
+    public Rigidbody rb; 
     private Collider col; 
 
     // Start is called before the first frame update
@@ -36,10 +36,9 @@ public class newHand : MonoBehaviour
             Debug.Log(other.transform.rotation);
             Debug.Log(other.transform.localRotation);
             //make the object a child of the VR hand  
-            //transform.SetParent(other.transform.parent);
+            //transform.SetParent(other.transform.parent); << functions the same as below as far as i can tell 
             transform.parent = other.transform.parent;
-      
-
+            
             transform.localRotation = other.transform.localRotation;
             // turn off gravity, otherwise it will fall away from VR hand 
             rb.useGravity = false; 
