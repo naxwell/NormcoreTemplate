@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class NormcoreSwapHead : MonoBehaviour
 {
-    public string objectName; 
+    public string objectName;
+
+    public GameObject[] clapperObjects;
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (GameObject obj in clapperObjects)
+        {
+            obj.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +36,16 @@ public class NormcoreSwapHead : MonoBehaviour
                 }
                 else child.gameObject.SetActive(false);
             }
+
+            if(objectName == "Clapper")
+            {
+                foreach(GameObject obj in clapperObjects)
+                {
+                    obj.SetActive(true);
+                    
+                }
+            }
         }
+
     }
 }

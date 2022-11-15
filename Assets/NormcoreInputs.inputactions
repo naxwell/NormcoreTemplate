@@ -1,0 +1,54 @@
+{
+    "name": "NormcoreInputs",
+    "maps": [
+        {
+            "name": "Controller",
+            "id": "7ac0b370-087a-4338-9a5f-f2720b9f001a",
+            "actions": [
+                {
+                    "name": "Left Hand Primary",
+                    "type": "Button",
+                    "id": "188b61fe-a5eb-49df-81c2-c397a04af239",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Left Hand Secondary",
+                    "type": "Button",
+                    "id": "313c8c6e-a960-4bab-b51c-e2520c913ec9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "af254e8e-d877-4516-af69-2c128d0a3f89",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Hand Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9a657a2-c351-4bb3-9dfd-a331fbfa9c6c",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Hand Secondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
